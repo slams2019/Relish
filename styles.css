@@ -1,0 +1,168 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 6;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+
+       
+        animation: pop 3s infinite    
+    
+}
+
+header {
+    background-color: black;
+    font-size: 2.5rem;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  
+ 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows links to wrap on smaller screens */
+    gap: 10px;       /* Spacing between links */
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff7f50;;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stacks links vertically */
+        align-items: center;    /* Centers the links */
+    }
+
+    nav a {
+        width: 100%; /* Links will span the container's width */
+        text-align: center; /* Center-align the text */
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    color: #ff7f50;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.food-gallery img {
+    width: 400px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 10px; /* Keeps rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero input:focus {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+    background-color: #ff6347; /* Slightly darker shade */
+}
+
+.features, .promotions {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features:hover, .promotions:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+features h3, .promotions h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.features p, .promotions p {
+    font-size: 1rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
